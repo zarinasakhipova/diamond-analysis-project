@@ -38,6 +38,29 @@ The dataset includes multiple features of diamonds, such as:
 
 ## ✅ Output
 
+Key Results:
+
+**Model Performance:**
+- Mean Absolute Error (MAE): 666.18
+- R² Score: 98.5%
+
+**Feature Importance Visualization**
+![Feature Importance Visualization](images/feature_importance.png)
+
+The model achieved high accuracy in predicting diamond prices, enabling confident recommendations with an optimal price-to-quality ratio.
+
+**Best Model Parameters:**
+- n_estimators: 150
+- max_depth: 20
+- min_samples_split: 2
+
+**Top-5 Diamond Recommendations** 
+Recommendations were based on the lowest price-per-carat ratio among diamonds that met both the budget and feature preferences.
+All diamonds in the top-5 list satisfy the following conditions:
+- Price ≤ $3000
+- Carat weight ≤ 1.0
+- Cut quality: "Very Good" or "Ideal"
+
 A final CSV file with the top 5 diamonds by value, and a structured notebook showing all analysis steps.
 
 ## ⚙️ Setup
